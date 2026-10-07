@@ -23,7 +23,7 @@ csv_url = f"https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/{pi
 # with open(file=f"bronze/{pid}_metadata.json", mode="w") as f:
 #     json.dump(dimension, f, indent=2)
 
-# get csv in bulk (zip)
+# get csv in bulk (zip) - gives 2 csvs (bulk csv + metaData csv)
 res_csv = requests.get(csv_url)
 res_csv.raise_for_status()
 
