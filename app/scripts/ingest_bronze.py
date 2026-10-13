@@ -1,17 +1,13 @@
 import requests
 import json
 import zipfile
+import glob
 import io
 
 pid = 10100139
-vector_ids = (
-    list(range(39050, 39058))
-    + list(range(39059, 39069))
-    + list(range(39070, 39075))
-    + list(range(39076, 39080))
-)
-payload = [{"productId": pid}]
+bronze_dir = "./data/bronze"
 md_url = "https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata"
+payload = [{"productId": pid}]
 csv_url = f"https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/{pid}/en"
 
 
@@ -27,8 +23,14 @@ def get_csv_bulk():
         res_zip = requests.get(zip_url)
         res_zip.raise_for_status()
         with zipfile.ZipFile(io.BytesIO(res_zip.content)) as z:
-            z.extractall("./data/bronze")
+            z.extractall(bronze_dir)
+
+
+def run_bronze_ingestion():
+    csv_file = glob.glob(f"{bronze_dir}/**/*.csv", recursive=True)
+    if not csv_file:
+        get_csv_bulk()
 
 
 if __name__ == "__main__":
-    get_csv_bulk()
+    run_bronze_ingestion()
