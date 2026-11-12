@@ -23,7 +23,7 @@ def transform_initial_bulk_parquet():
             from read_csv('{bronze_dir}/{pid}.csv')
             where vector in ({vectors})
         )
-        to '{silver_dir}/*.parquet'
+        to '{silver_dir}/{pid}.parquet'
         (format parquet)
         """)
 
