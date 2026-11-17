@@ -27,7 +27,7 @@ def get_csv_bulk():
 
 
 def run_bronze_ingestion():
-    csv_file = glob.glob(f"{bronze_dir}/**/*.csv", recursive=True)
+    csv_file = glob.glob(f"{bronze_dir}/**/{pid}.csv", recursive=True)
     if not csv_file:
         get_csv_bulk()
 
