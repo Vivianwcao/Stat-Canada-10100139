@@ -18,7 +18,6 @@ def transform_initial_bulk_parquet():
         copy(
             select
                 ref_date::date ref_date,
-                geo,
                 "Financial market statistics",
                 VALUE::numeric(10, 2) value,
                 substring(vector, 2)::integer vector

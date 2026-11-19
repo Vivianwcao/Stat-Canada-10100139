@@ -10,7 +10,6 @@ silver_dir = "./data/silver"
 SCHEMA = pa.schema(
     [
         ("ref_date", pa.date32()),
-        ("geo", pa.string()),
         ("Financial market statistics", pa.string()),
         ("value", pa.float64()),
         ("vector", pa.int64()),
@@ -69,7 +68,6 @@ def create_parquet(data):
             rows.append(
                 {
                     "ref_date": datetime.strptime(x["refPer"], "%Y-%m-%d"),
-                    "geo": "Canada",
                     "Financial market statistics": vector_mapper.get(vector_id),
                     "value": float(value),
                     "vector": vector_id,
