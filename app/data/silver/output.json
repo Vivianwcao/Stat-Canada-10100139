@@ -550,7 +550,7 @@
           "symbolCode": 0,
           "statusCode": 1,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         },
         {
@@ -564,7 +564,7 @@
           "symbolCode": 0,
           "statusCode": 1,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         },
         {
@@ -578,7 +578,21 @@
           "symbolCode": 0,
           "statusCode": 0,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
+          "frequencyCode": 1
+        },
+        {
+          "refPer": "2026-11-17",
+          "refPer2": "",
+          "refPerRaw": "2026-11-17",
+          "refPerRaw2": "",
+          "value": 3.4,
+          "decimals": 2,
+          "scalarFactorCode": 0,
+          "symbolCode": 0,
+          "statusCode": 0,
+          "securityLevelCode": 0,
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         }
       ]
@@ -1135,7 +1149,7 @@
           "symbolCode": 0,
           "statusCode": 1,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         },
         {
@@ -1149,7 +1163,7 @@
           "symbolCode": 0,
           "statusCode": 1,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         },
         {
@@ -1163,7 +1177,21 @@
           "symbolCode": 0,
           "statusCode": 0,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
+          "frequencyCode": 1
+        },
+        {
+          "refPer": "2026-11-17",
+          "refPer2": "",
+          "refPerRaw": "2026-11-17",
+          "refPerRaw2": "",
+          "value": 3.53,
+          "decimals": 2,
+          "scalarFactorCode": 0,
+          "symbolCode": 0,
+          "statusCode": 0,
+          "securityLevelCode": 0,
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         }
       ]
@@ -1720,7 +1748,7 @@
           "symbolCode": 0,
           "statusCode": 1,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         },
         {
@@ -1734,7 +1762,7 @@
           "symbolCode": 0,
           "statusCode": 1,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         },
         {
@@ -1748,7 +1776,21 @@
           "symbolCode": 0,
           "statusCode": 0,
           "securityLevelCode": 0,
-          "releaseTime": "2026-11-18T08:30",
+          "releaseTime": "2026-11-19T08:30",
+          "frequencyCode": 1
+        },
+        {
+          "refPer": "2026-11-17",
+          "refPer2": "",
+          "refPerRaw": "2026-11-17",
+          "refPerRaw2": "",
+          "value": 2.5,
+          "decimals": 4,
+          "scalarFactorCode": 0,
+          "symbolCode": 0,
+          "statusCode": 0,
+          "securityLevelCode": 0,
+          "releaseTime": "2026-11-19T08:30",
           "frequencyCode": 1
         }
       ]

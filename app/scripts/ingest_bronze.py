@@ -5,7 +5,7 @@ import glob
 import io
 
 pid = 10100139
-bronze_dir = "./data/bronze"
+bronze_dir = "data/bronze"
 md_url = "https://www150.statcan.gc.ca/t1/wds/rest/getCubeMetadata"
 payload = [{"productId": pid}]
 csv_url = f"https://www150.statcan.gc.ca/t1/wds/rest/getFullTableDownloadCSV/{pid}/en"
