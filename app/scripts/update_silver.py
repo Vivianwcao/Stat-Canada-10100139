@@ -1,6 +1,7 @@
 import duckdb
 from datetime import timedelta, date
 import requests
+import json
 
 pid = 10100139
 silver_dir = "./data/silver"
@@ -30,8 +31,10 @@ def request_updates():
     res.raise_for_status()
     # Convert JSON response into Python object
     data = res.json()
+    with open("data/silver/output.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
     return data
 
 
 if __name__ == "__main__":
-    print(request_updates())
+    request_updates()
